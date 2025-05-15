@@ -17,4 +17,9 @@ Este es un proyecto de calculadora científica desarrollada con HTML, CSS y Java
   -Botón de limpieza (C) para reiniciar la operación
 
 ## Estructura del Proyecto
+├── index.html # Estructura HTML de la calculadora
+├── index.css # Estilos personalizados
+└── index.js # Lógica y funciones de la calculadora
+
+
 
