@@ -1,0 +1,134 @@
+/* Reset del box-sizing igual */
+* {
+  box-sizing: border-box;
+}
+
+/* Cambios en el body: */
+body {
+  margin: 0;
+  padding: 0;
+  /* Cambie la fuente Arial por 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Cambie el color de fondo verde claro (#c8e6c9) por un lila muy claro (#f3e5f5) */
+  background-color: #f3e5f5;
+}
+
+/* Contenedor principal: */
+.container {
+  width: 100%;
+  /* Reduje el ancho maximo de 800px a 400px */
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  /* Agregue padding para dar espacio interno */
+  padding: 20px;
+}
+
+/* Titulo h1: */
+h1 {
+  /* Cambie el color verde (#4caf50) por un morado oscuro (#6a1b9a) */
+  color: #6a1b9a;
+  /* Agregue tamaño de fuente mas grande: 2.5em */
+  font-size: 2.5em;
+}
+
+/* Calculadora: */
+.calculator {
+  background-color: #ffffff; /* Igual que antes */
+  /* Cambie border-radius de 5px a 10px para bordes mas redondeados */
+  border-radius: 10px;
+  padding: 20px;
+  /* Agregue sombra para darle mas profundidad */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Display (donde se ve el numero): */
+.display {
+  /* Aumente el margen inferior de 10px a 15px para mas separacion */
+  margin-bottom: 15px;
+}
+
+.display input {
+  width: 100%;
+  /* Aumente el padding de 10px a 20px para hacer el input mas grande */
+  padding: 20px;
+  font-size: 2em; /* Igual que antes */
+  text-align: right;
+  /* Cambie el borde: antes no tenia borde, ahora tiene borde solido de 2px color lila claro (#ce93d8) */
+  border: 2px solid #ce93d8;
+  /* Aumente border-radius de 5px a 10px */
+  border-radius: 10px;
+  /* Cambie el fondo de blanco a un gris muy claro (#f8f8f8) */
+  background-color: #f8f8f8;
+}
+
+/* Contenedor de botones: */
+/* Cambie de grid con 4 columnas a flexbox en columna para organizar por filas */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Cada fila de botones: */
+/* Agregue una clase .row para crear filas con flexbox y espacio entre botones */
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Botones: */
+button {
+  /* Cambie para que cada boton tome el mismo espacio disponible */
+  flex: 1;
+  /* Aumente padding a 15px para hacer botones mas grandes */
+  padding: 15px;
+  /* Reduje tamaño de fuente a 1.2em (antes era 1.5em) */
+  font-size: 1.2em;
+  border: none;
+  /* Cambie border-radius a 8px */
+  border-radius: 8px;
+  cursor: pointer;
+  /* Agregue transicion para suavizar el cambio de color */
+  transition: background-color 0.3s ease;
+  /* Agregue un tamaño minimo de ancho para que botones no queden muy pequenos */
+  min-width: 60px;
+}
+
+/* Nuevas clases para estilos de botones con colores especiales: */
+/* Boton de limpiar (clear) con fondo rojo y texto blanco */
+.clear {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+/* Botones operadores con fondo azul celeste */
+.operator {
+  background-color: #5bc0de;
+  color: #fff;
+}
+
+/* Boton igual con azul mas oscuro */
+.equal {
+  background-color: #0275d8;
+  color: #fff;
+}
+
+/* Botones funcionales con fondo amarillo */
+.func-yellow {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+
+/* Botones funcionales con fondo verde */
+.func-green {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+/* Efecto hover para todos los botones: */
+/* Cambia la opacidad para suavizar sin cambiar color */
+button:hover {
+  opacity: 0.85;
+}

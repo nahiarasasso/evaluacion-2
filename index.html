@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <div class="container">
+    <h1>Calculadora Científica</h1>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="result" disabled>
+      </div>
+       <div class="buttons">
+      <!-- Fila 1: Borrar y funciones científicas -->
+      <div class="row">
+        <button onclick="clearResult()" class="clear">C</button>
+        <button onclick="calculate('%')" class="func-yellow">%</button>
+        <button onclick="calculate('sqrt')" class="func-yellow">√</button>
+        <button onclick="calculate('square')" class="func-yellow">x²</button>
+      </div>
+
+      <div class="row">
+        <button onclick="calculate('pow3')" class="func-yellow">x³</button>
+        <button onclick="calculate('log')" class="func-green">ln</button>
+        <button onclick="calculate('sin')" class="func-green">sin</button>
+        <button onclick="calculate('cos')" class="func-green">cos</button>
+        <button onclick="calculate('tan')" class="func-green">tan</button>
+      </div>
+
+      <!-- Fila 2: Números y operadores -->
+      <div class="row">
+        <button onclick="calculate('7')">7</button>
+        <button onclick="calculate('8')">8</button>
+        <button onclick="calculate('9')">9</button>
+        <button onclick="calculate('/')" class="operator">/</button>
+      </div>
+
+      <div class="row">
+        <button onclick="calculate('4')">4</button>
+        <button onclick="calculate('5')">5</button>
+        <button onclick="calculate('6')">6</button>
+        <button onclick="calculate('*')" class="operator">*</button>
+      </div>
+
+      <div class="row">
+        <button onclick="calculate('1')">1</button>
+        <button onclick="calculate('2')">2</button>
+        <button onclick="calculate('3')">3</button>
+        <button onclick="calculate('-')" class="operator">-</button>
+      </div>
+
+      <div class="row">
+        <button onclick="calculate('0')">0</button>
+        <button onclick="calculate('.')">.</button>
+        <button onclick="calculate('=')" class="equal">=</button>
+        <button onclick="calculate('+')" class="operator">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <script src="index.js"></script>
+</body>
+</html>
